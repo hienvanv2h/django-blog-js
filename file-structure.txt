@@ -1,0 +1,97 @@
+﻿Folder PATH listing for volume Windows
+Volume serial number is 08B6-ED28
+C:.
+│   .gitignore
+│   db.sqlite3
+│   manage.py
+│   output.txt
+│   README.md
+│   requirements.txt
+│   
+├───blogposts
+│   │   admin.py
+│   │   apps.py
+│   │   forms.py
+│   │   models.py
+│   │   tests.py
+│   │   urls.py
+│   │   views.py
+│   │   __init__.py
+│   │   
+│   ├───migrations
+│   │   │   0001_initial.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           0001_initial.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   ├───static
+│   │   └───blogposts
+│   │           detail.js
+│   │           main.js
+│   │           
+│   ├───templates
+│   │   └───blogposts
+│   │           detail.html
+│   │           main.html
+│   │           
+│   └───__pycache__
+│           admin.cpython-312.pyc
+│           apps.cpython-312.pyc
+│           forms.cpython-312.pyc
+│           models.cpython-312.pyc
+│           urls.cpython-312.pyc
+│           views.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│           
+├───blogposts_project
+│   │   asgi.py
+│   │   settings.py
+│   │   urls.py
+│   │   wsgi.py
+│   │   __init__.py
+│   │   
+│   └───__pycache__
+│           settings.cpython-312.pyc
+│           urls.cpython-312.pyc
+│           wsgi.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│           
+├───media
+│       default-avatar.png
+│       
+├───profiles
+│   │   admin.py
+│   │   apps.py
+│   │   models.py
+│   │   signals.py
+│   │   tests.py
+│   │   views.py
+│   │   __init__.py
+│   │   
+│   ├───migrations
+│   │   │   0001_initial.py
+│   │   │   __init__.py
+│   │   │   
+│   │   └───__pycache__
+│   │           0001_initial.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   ├───static
+│   └───__pycache__
+│           admin.cpython-312.pyc
+│           apps.cpython-312.pyc
+│           models.cpython-312.pyc
+│           signals.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│           
+├───static
+│       base.js
+│       favicon.ico
+│       style.css
+│       
+└───templates
+        base.html
+        navbar.html
+        
