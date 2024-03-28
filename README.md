@@ -1,0 +1,1 @@
+Blog (Django + JavaScript/Ajax)

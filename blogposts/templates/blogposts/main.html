@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+<!-- Load static files -->
+{% load static %}
+<!-- Load Crispy from -->
+{% load crispy_forms_tags %}
+
+<!-- Script -->
+{% block scripts %}
+<script src="{% static 'blogposts/main.js' %}" defer></script>
+{% endblock scripts %}
+
+<!-- Title -->
+{% block title %} Posts {% endblock title %}
+
+<!-- Content -->
+{% block content %}
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="addPostModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create post</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form id="post-form">
+          {% csrf_token %}
+          <!-- Form -->
+          {{ form | crispy}}
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-success">Add Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+<div class="alert-box"></div>
+<button
+  type="button"
+  class="btn btn-info fw-bold mb-2"
+  data-bs-toggle="modal"
+  data-bs-target="#addPostModal"
+>
+  Create new post
+</button>
+
+<!-- Render list of posts -->
+<div id="posts-data"></div>
+
+<!-- Spinner -->
+<div id="spinner-box" class="text-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<div id="load-box" class="text-center mb-3">
+  <button id="load-btn" class="btn btn-primary">Load More</button>
+</div>
+<!--  -->
+{% endblock content %}
